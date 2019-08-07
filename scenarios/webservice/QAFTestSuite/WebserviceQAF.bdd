@@ -1,0 +1,11 @@
+
+SCENARIO: Webservice QAF
+META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"rinkesh.jain"}
+
+    When user requests "GET.struts2.rest.showcase.2.5.18.orders.json"
+    And user requests "PUT.struts2.rest.showcase.2.5.18.orders.3.json"
+    Then response should have status code "200"
+    And response should have header "Content-Length" with value "4"
+    When user requests "PUT.struts2.rest.showcase.2.5.18.orders.3.json_1"
+
+END

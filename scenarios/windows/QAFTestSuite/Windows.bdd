@@ -1,0 +1,15 @@
+
+SCENARIO: Windows
+META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"rinkesh.jain"}
+
+    When wait until "..window..window.2...group..group.6...button.8." to be enable
+    And click on "..window..window.2...group..group.6...button.8."
+    And wait until "..window..window.2...group..group.4...button.2." to be enable
+    And click on "..window..window.2...group..group.4...button.2."
+    And wait until "..window..window.2...group..group.6...button.8." to be enable
+    And click on "..window..window.2...group..group.6...button.8."
+    And wait until "..window..window.2...group..group.4...button.5." to be enable
+    And click on "..window..window.2...group..group.4...button.5."
+    Then verify "xpath..Window.Window.2..Group.Text" text is "Display is 49"
+
+END

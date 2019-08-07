@@ -1,0 +1,71 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- QMetry Automation Framework provides a powerful and versatile platform
+	to author Automated Test Cases in Behavior Driven, Keyword Driven or Code
+	Driven approach Copyright 2016 Infostretch Corporation This program is free
+	software: you can redistribute it and/or modify it under the terms of the
+	GNU General Public License as published by the Free Software Foundation,
+	either version 3 of the License, or any later version. This program is distributed
+	in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+	the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+	See the GNU General Public License for more details. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+	OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
+	You should have received a copy of the GNU General Public License along with
+	this program in the name of LICENSE.txt in the root folder of the distribution.
+	If not, see https://opensource.org/licenses/gpl-3.0.html See the NOTICE.TXT
+	file in root folder of this source files distribution for additional information
+	regarding copyright ownership and licenses of other open source software
+	/ files used by QMetry Automation Framework. For any inquiry or need additional
+	information, please contact support-qaf@infostretch.com -->
+<suite name="QAF Demo" verbose="0">
+	<test name="BDD Test for MobileWeb" enabled="true">
+		<parameter name="scenario.file.loc" value="scenarios/mobileweb"></parameter>
+		<parameter name="env.resources" value="resources/testdata;resources/mobileweb"></parameter>
+		<parameter name="step.provider.pkg" value="steps;steps.mobileweb"></parameter>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+	<test name="BDD Test for Web" enabled="true">
+		<parameter name="scenario.file.loc" value="scenarios/web"></parameter>
+		<parameter name="env.resources" value="resources/testdata;resources/web"></parameter>
+		<parameter name="step.provider.pkg" value="steps;steps.web"></parameter>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+	<test name="BDD Test for Android" enabled="true">
+		<parameter name="scenario.file.loc" value="scenarios/android"></parameter>
+		<parameter name="env.resources" value="resources/testdata;resources/android"></parameter>
+		<parameter name="step.provider.pkg" value="steps;steps.android"></parameter>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+	<test name="BDD Test for iOS" enabled="true">
+		<parameter name="scenario.file.loc" value="scenarios/ios"></parameter>
+		<parameter name="env.resources" value="resources/testdata;resources/ios"></parameter>
+		<parameter name="step.provider.pkg" value="steps;steps.ios"></parameter>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+	<test name="BDD Test for Windows" enabled="true">
+		<parameter name="scenario.file.loc" value="scenarios/windows"></parameter>
+		<parameter name="env.resources" value="resources/testdata;resources/windows"></parameter>
+		<parameter name="step.provider.pkg" value="steps;steps.windows"></parameter>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+	<test name="BDD Test for WebService" enabled="true">
+		<parameter name="scenario.file.loc" value="scenarios/webservice"></parameter>
+		<parameter name="env.resources" value="resources/testdata;resources/webservice"></parameter>
+		<parameter name="step.provider.pkg" value="steps;steps.webservice"></parameter>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+
+</suite>
