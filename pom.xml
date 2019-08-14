@@ -9,7 +9,7 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<testSuiteFile>config/web_config.xml</testSuiteFile>
+		<testSuiteFile>config/<PLATFORM>_config.xml</testSuiteFile>
 		<sourceVersion>1.7</sourceVersion>
 		<targetVersion>1.7</targetVersion>
 		<qaf.version>2.1.14</qaf.version>
