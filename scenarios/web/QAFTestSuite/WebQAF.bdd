@@ -1,26 +1,20 @@
 
-SCENARIO : Web QAF
-META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"rinkesh.jain","dataFile":"resources/testdata/web.csv"}
+SCENARIO : web
+META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"ankit.detroja","dataFile":"resources/testdata/web.csv"}
 
    Given get "https://www.gmail.com"
    When wait until "email.identifierid" to be enable
    And clear "email.identifierid"
    And wait until "email.identifierid" to be enable
    And sendKeys "demoqas2019@gmail.com" into "email.identifierid"
-   And wait until "div.div2111" to be enable
-   And click on "div.div2111"
    Then verify "email.identifierid" value is "demoqas2019@gmail.com"
-   When wait until "span.span1111" to be enable
+   #When wait until "span.span1111" to be enable
    And click on "span.span1111"
    And wait until "password.qas2019" to be enable
    And clear "password.qas2019"
    And wait until "password.qas2019" to be enable
    And sendKeys "${password}" into "password.qas2019"
-   And wait until "div.div111" to be enable
-   And click on "div.div111"
    Then verify "password.qas2019" value is "${password}"
-   When wait until "span.span1111_1" to be enable
-   And click on "span.span1111_1"
   
 END
 
