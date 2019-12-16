@@ -1,7 +1,12 @@
 
-email.identifierid={"locator":"id=identifierId","desc":"identifierId email"}
-div.div2111={"locator":"xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/span/div[3]","desc":"Text DIV2111"}
-span.span1111={"locator":"xpath=//div[@id='identifierNext']/span","desc":"Text SPAN1111"}
-password.test={"locator":"name=password","desc":"test password"}
-div.div111={"locator":"xpath=//div[@id='view_container']/div/div/div[2]/div","desc":"Text DIV111"}
-div.div11111={"locator":"xpath=//div[@id='passwordNext']/span/span","desc":"Text DIV11111"}
+text.txtusername={"locator":"id=txtUsername","desc":"Input for txtUsername"}
+password.txtpassword={"locator":"id=txtPassword","desc":"txtPassword password"}
+button.btnlogin={"locator":"id=btnLogin","desc":"BUTTON btnLogin"}
+number.enteramountforcredit={"locator":"xpath=//div[2]/input","desc":"Enter amount for credit number"}
+button.button11={"locator":"xpath=//div[2]/span/button","desc":"BUTTON BUTTON11"}
+strong.usergloberank={"locator":"id=user-globe-rank","desc":"STRONG user-globe-rank"}
+operation.success.message={"locator":"xpath=//div/div","desc":"Text DIV"}
+number.enteramountforcredit={"locator":"xpath=//input[@placeholder='Enter amount for credit']","desc":"Enter amount for credit number"}
+button.logout={"locator":"xpath=//button","desc":"BUTTON LOGOUT"}
+button.credit={"locator":"xpath=.//button[text()='Credit']","desc":"BUTTON CREDIT"}
+text.currentbalance={"locator":"id=user-globe-rank","desc":"Current Balance"}
