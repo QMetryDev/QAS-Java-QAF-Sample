@@ -2,11 +2,15 @@
     "steps": [
         {
             "command": "Click",
-            "element": "xpath=/Window/Window[2]/Group/Group[5]/Button[2]",
+            "element": "..window..window.2...group..group.5...button.2.",
             "eArray": [
                 [
                     "xpath=/Window/Window[2]/Group/Group[5]/Button[2]",
                     "xpath"
+                ],
+                [
+                    "..window..window.2...group..group.5...button.2.",
+                    "key"
                 ]
             ],
             "input": "",
@@ -23,11 +27,15 @@
         },
         {
             "command": "Click",
-            "element": "xpath=/Window/Window[2]/Group/Group[4]/Button[4]",
+            "element": "..window..window.2...group..group.4...button.4.",
             "eArray": [
                 [
                     "xpath=/Window/Window[2]/Group/Group[4]/Button[4]",
                     "xpath"
+                ],
+                [
+                    "..window..window.2...group..group.4...button.4.",
+                    "key"
                 ]
             ],
             "input": "",
@@ -44,11 +52,15 @@
         },
         {
             "command": "Click",
-            "element": "xpath=/Window/Window[2]/Group/Group[5]/Button[9]",
+            "element": "..window..window.2...group..group.5...button.9.",
             "eArray": [
                 [
                     "xpath=/Window/Window[2]/Group/Group[5]/Button[9]",
                     "xpath"
+                ],
+                [
+                    "..window..window.2...group..group.5...button.9.",
+                    "key"
                 ]
             ],
             "input": "",
@@ -65,11 +77,15 @@
         },
         {
             "command": "Click",
-            "element": "xpath=/Window/Window[2]/Group/Group[4]/Button[5]",
+            "element": "..window..window.2...group..group.4...button.5.",
             "eArray": [
                 [
                     "xpath=/Window/Window[2]/Group/Group[4]/Button[5]",
                     "xpath"
+                ],
+                [
+                    "..window..window.2...group..group.4...button.5.",
+                    "key"
                 ]
             ],
             "input": "",
@@ -86,11 +102,15 @@
         },
         {
             "command": "Verify Text",
-            "element": "xpath=/Window/Window[2]/Group/Text[2]",
+            "element": "xpath..Window.Window.2..Group.Text.2.",
             "eArray": [
                 [
                     "xpath=/Window/Window[2]/Group/Text[2]",
                     "xpath"
+                ],
+                [
+                    "xpath..Window.Window.2..Group.Text.2.",
+                    "key"
                 ]
             ],
             "input": "Display is 9",
