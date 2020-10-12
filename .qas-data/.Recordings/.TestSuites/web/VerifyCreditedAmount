@@ -310,50 +310,6 @@
             "elementDesc": "BUTTON BUTTON11",
             "indexColumn": "",
             "tcId": "46"
-        },
-        {
-            "command": "Assert Text",
-            "element": "strong.usergloberank",
-            "eArray": [
-                [
-                    "id=user-globe-rank",
-                    "id"
-                ],
-                [
-                    "xpath=//span/strong",
-                    "xpath:position"
-                ],
-                [
-                    "css=#user-globe-rank",
-                    "css"
-                ],
-                [
-                    "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Current Balance :'])[1]/following::strong[1]",
-                    "xpath:neighbor"
-                ],
-                [
-                    "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Check My Balance'])[1]/following::strong[1]",
-                    "xpath:neighbor"
-                ],
-                [
-                    "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Debit'])[1]/preceding::strong[1]",
-                    "xpath:neighbor"
-                ],
-                [
-                    "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Credit'])[1]/preceding::strong[1]",
-                    "xpath:neighbor"
-                ],
-                [
-                    "strong.usergloberank",
-                    "key"
-                ]
-            ],
-            "input": "$ -1173147859",
-            "status": "NotRun",
-            "elementKey": "strong.usergloberank",
-            "elementDesc": "STRONG user-globe-rank",
-            "indexColumn": "",
-            "tcId": "46"
         }
     ],
     "type": "web",
@@ -375,5 +331,10 @@
     },
     "testDataExample": [],
     "isTCValid": true,
+    "externalTestData": false,
+    "dbDetails": {},
+    "recordSessionType": "multiple",
+    "tags": [],
+    "shared": false,
     "executionStatus": "NotRun"
 }
