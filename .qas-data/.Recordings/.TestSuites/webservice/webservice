@@ -9,11 +9,12 @@
             "elementKey": "GET.struts2.rest.showcase.2.5.18.orders.json",
             "elementDesc": "",
             "indexColumn": "",
-            "tcId": 11,
-            "tsId": 2,
-            "duration": 1117000000,
+            "tcId": "15",
+            "tsId": 14,
+            "duration": 1196000000,
             "errMessage": "",
-            "isRowExpanded": false
+            "isRowExpanded": false,
+            "testData": false
         },
         {
             "command": "Request",
@@ -23,11 +24,12 @@
             "elementKey": "PUT.struts2.rest.showcase.2.5.18.orders.3.json",
             "elementDesc": "",
             "indexColumn": "",
-            "tcId": 11,
-            "tsId": 2,
-            "duration": 815000000,
+            "tcId": "15",
+            "tsId": 14,
+            "duration": 1088000000,
             "errMessage": "",
-            "isRowExpanded": false
+            "isRowExpanded": false,
+            "testData": false
         },
         {
             "command": "Response Should Have Status Code",
@@ -38,11 +40,12 @@
             "elementKey": "",
             "elementDesc": "",
             "indexColumn": "",
-            "tcId": 11,
-            "tsId": 2,
-            "duration": 502000000,
+            "tcId": "15",
+            "tsId": 14,
+            "duration": 572000000,
             "errMessage": "",
-            "isRowExpanded": false
+            "isRowExpanded": false,
+            "testData": false
         },
         {
             "command": "Response Should Have Header With Value",
@@ -58,11 +61,12 @@
             "elementKey": "",
             "elementDesc": "",
             "indexColumn": "",
-            "tcId": 11,
-            "tsId": 2,
-            "duration": 514000000,
+            "tcId": "15",
+            "tsId": 14,
+            "duration": 539000000,
             "errMessage": "",
-            "isRowExpanded": false
+            "isRowExpanded": false,
+            "testData": false
         },
         {
             "command": "Request",
@@ -73,11 +77,12 @@
             "elementKey": "PUT.struts2.rest.showcase.2.5.18.orders.3.json_1",
             "elementDesc": "",
             "indexColumn": "",
-            "tcId": 11,
-            "tsId": 2,
-            "duration": 1035000000,
+            "tcId": "15",
+            "tsId": 14,
+            "duration": 886000000,
             "errMessage": "",
-            "isRowExpanded": false
+            "isRowExpanded": false,
+            "testData": false
         }
     ],
     "type": "webservice",
@@ -87,5 +92,11 @@
         "baseUrl": "https://qas.qmetry.com/bank"
     },
     "testDataExample": [],
+    "isTCValid": true,
+    "externalTestData": false,
+    "dbDetails": {},
+    "recordSessionType": "multiple",
+    "tags": [],
+    "shared": false,
     "executionStatus": "NotRun"
 }
