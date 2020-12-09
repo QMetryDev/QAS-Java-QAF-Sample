@@ -13,6 +13,9 @@ import org.openqa.selenium.Keys;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import com.qmetry.qaf.automation.util.PropertyUtil;
 // define common steps among all the platforms.
 // You can create sub packages to organize the steps within different modules
 public class StepsLibrary {
@@ -76,8 +79,33 @@ public class StepsLibrary {
 		try {
 			Thread.sleep(time);
 			System.out.println("Execution waited for "+time+" ms");
-	} catch (Exception e) {
+	    } catch (Exception e) {
 		System.out.println(" Exection occured on implicit wait : "+e);
+        }
+    }
+	@QAFTestStep(description = "setBeforeLambdaTestCapabilities {data}")
+	public static void setBeforeLambdaTestCapabilities(String data) {
+		String jsonText = data;
+		String cap = null;
+		JSONParser parser = new JSONParser();
+		JSONObject newJObject = new JSONObject();
+		try {
+			newJObject = (JSONObject) parser.parse(jsonText);
+			cap = newJObject.get("cap").toString().replaceAll("\"", "'");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		ConfigurationManager.getBundle().setProperty("driver.name", "lambdaRemoteDriver");
+		ConfigurationManager.getBundle().setProperty("remote.server", newJObject.get("remote.server"));
+		ConfigurationManager.getBundle().setProperty("lambda.additional.capabilities", cap);
+
 	}
-}
+
+	@QAFTestStep(description = "setAfterLambdaTestCapabilities")
+	public static void setAfterLambdaTestCapabilities() {
+		PropertyUtil prop = new PropertyUtil(
+		System.getProperty("application.properties.file", "resources/application.properties"));
+		ConfigurationManager.getBundle().setProperty("driver.name", prop.getPropertyValue("driver.name"));
+		ConfigurationManager.getBundle().setProperty("remote.server", prop.getPropertyValue("remote.server"));
+	}
 }
