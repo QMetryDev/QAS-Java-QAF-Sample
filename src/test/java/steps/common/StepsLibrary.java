@@ -16,6 +16,9 @@ import java.util.Set;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import com.qmetry.qaf.automation.util.PropertyUtil;
+import com.qmetry.qaf.automation.util.Validator;
+import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
+import org.openqa.selenium.interactions.Actions;
 // define common steps among all the platforms.
 // You can create sub packages to organize the steps within different modules
 public class StepsLibrary {
@@ -108,4 +111,41 @@ public class StepsLibrary {
 		ConfigurationManager.getBundle().setProperty("driver.name", prop.getPropertyValue("driver.name"));
 		ConfigurationManager.getBundle().setProperty("remote.server", prop.getPropertyValue("remote.server"));
 	}
+
+	@QAFTestStep(description="drag {source} and drop on {target} perform")
+	public static void dragAndDropPerform(String source, String target) {
+		QAFExtendedWebElement src = (QAFExtendedWebElement) $(source);
+		Actions actions = new Actions(src.getWrappedDriver());
+		actions.dragAndDrop(src, $(target)).perform();
+	}
+
+	@QAFTestStep(description="drag {0} and drop on {1} and {2} perform")
+    public void dragAndDropOnAndPerform(String source,String Xtarget,String Ytarget){
+		QAFExtendedWebElement src = (QAFExtendedWebElement) $(source);
+		Actions actions = new Actions(src.getWrappedDriver());
+		System.out.println("target : "+Xtarget+Ytarget);
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>> : "+Xtarget.getClass().getName());
+		actions.dragAndDropBy(src, Integer.parseInt(Xtarget), Integer.parseInt(Ytarget)).build();
+	}
+
+	@QAFTestStep(description = "maximise window")
+	public static void maximiseWindow() {
+		new WebDriverTestBase().getDriver().manage().window().maximize();
+	}
+
+	@QAFTestStep(description = "verifyTitle {0}")
+	public static void verifyTitle(String input) {
+		Validator.verifyTrue(new WebDriverTestBase().getDriver().getTitle().equalsIgnoreCase(input),"Actual Title: \""+ new WebDriverTestBase().getDriver().getTitle() +"\" does not match with Expected: \"" +input+"\"" , "Actual Title: \""+ new WebDriverTestBase().getDriver().getTitle()+"\" matches with Expected: \"" +input+"\"");
+	}
+
+	@QAFTestStep(description = "assertTitle {0}")
+	public static void assertTitle(String input) {
+		Validator.assertTrue(new WebDriverTestBase().getDriver().getTitle().equalsIgnoreCase(input),"Actual Title: \""+ new WebDriverTestBase().getDriver().getTitle() +"\" does not match with Expected: \"" +input+"\"" , "Actual Title: \""+ new WebDriverTestBase().getDriver().getTitle()+"\" matches with Expected: \"" +input+"\"");
+	}
+	
+	@QAFTestStep(description = "maximizeWindow")
+	public static void maximizeWindow() {
+		new WebDriverTestBase().getDriver().manage().window().maximize();
+	}
+
 }
