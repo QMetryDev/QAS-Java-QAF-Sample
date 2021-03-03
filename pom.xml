@@ -10,11 +10,11 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<testSuiteFile>config/<PLATFORM>_config.xml</testSuiteFile>
-		<sourceVersion>1.7</sourceVersion>
-		<targetVersion>1.7</targetVersion>
-		<qaf.version>2.1.14</qaf.version>
-		<qaf.support.version>2.1.14-RC1</qaf.support.version>
-		<qaf.support.ws.version>2.1.14-RC1</qaf.support.ws.version>
+		<sourceVersion>1.8</sourceVersion>
+		<targetVersion>1.8</targetVersion>
+		<qaf.version>3.0.0</qaf.version>
+		<qaf.support.version>3.0.0</qaf.support.version>
+		<qaf.support.ws.version>3.0.0</qaf.support.ws.version>
 		<test.results.dir>test-results</test.results.dir>
 		<run.time>${maven.build.timestamp}</run.time>
 		<lib.dir>${project.basedir}/lib</lib.dir>
@@ -143,7 +143,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>aspectj-maven-plugin</artifactId>
-				<version>1.7</version>
+				<version>1.8</version>
 				<executions>
 					<execution>
 						<id>test-compile</id>
