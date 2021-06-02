@@ -23,7 +23,7 @@
 	<test name="Android Test(BDD)" enabled="true">
 		<classes>
 			<class
-				name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+				name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
 		</classes>
 	</test>
 	<test name="Android Test(JAVA)" enabled="false">

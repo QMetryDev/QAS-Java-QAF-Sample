@@ -22,17 +22,20 @@ of other open source software / files used by QMetry Automation Framework.
 For any inquiry or need additional information, please contact support-qaf@infostretch.com
 
 -->
-<suite name="Web Suite" verbose="0">
-	<parameter name="scenario.file.loc" value="scenarios/web"></parameter>
-	<test name="Web Test(BDD)" enabled="true">
+<suite name="iOS Suite" verbose="0">
+	<parameter name="scenario.file.loc" value="scenarios/ios"></parameter>
+	<test name="iOS Test(BDD)" enabled="true">
 		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
+			<class
+				name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
 		</classes>
 	</test>
-	<test name="Web Test(Java)" enabled="false">
+
+	<test name="iOS Test(JAVA)" enabled="false">
 		<packages>
-			<package name="test.web"></package>
-			<package name="test.web.*"></package>
+			<package name="test.ios"></package>
+			<package name="test.ios.*"></package>
 		</packages>
 	</test>
+
 </suite>

@@ -27,7 +27,7 @@ For any inquiry or need additional information, please contact support-qaf@infos
 <parameter name="scenario.file.loc" value="scenarios/webservice"></parameter>
 	<test name="WebService Test(BDD)" enabled="true">
 		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
 		</classes>
 	</test>
 	<test name="WebService Test(Java)" enabled="false">
