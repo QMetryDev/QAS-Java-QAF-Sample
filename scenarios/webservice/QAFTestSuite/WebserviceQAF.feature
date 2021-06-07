@@ -1,6 +1,6 @@
 Feature: webservice
 
-@author:rinkesh.jain
+@author:nidhi.shah
 @description:Sample Test Scenario for Webservices
 @SMOKE
 

@@ -1,6 +1,6 @@
 Feature: android
 
-@author:rinkesh.jain
+@author:nidhi.shah
 @description:A scenario to verify transacations
 @SMOKE
 
