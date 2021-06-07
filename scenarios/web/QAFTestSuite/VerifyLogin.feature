@@ -1,8 +1,13 @@
+Feature: web
 
-SCENARIO : VerifyLogin
-META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"nidhi.shah","dataFile":"resources/testdata/data.csv"}
+@author:nidhi.shah
+@dataFile:resources/web/users.csv
+@description:A Scenario to verify the login
+@SMOKE
 
-   Given get "https://qas.qmetry.com/bank/"
+Scenario: VerifyLogin
+
+   Given get "https://qas.qmetry.com/bank"
    When wait until "text.txtusername" to be enable
    And clear "text.txtusername"
    And wait until "text.txtusername" to be enable
@@ -13,7 +18,6 @@ META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"ni
    And sendKeys "${password}" into "password.txtpassword"
    And wait until "button.btnlogin" to be enable
    And click on "button.btnlogin"
-   Then verify "button.logout" is present
+   Then verify "button.logout" is visible
   
-END
 

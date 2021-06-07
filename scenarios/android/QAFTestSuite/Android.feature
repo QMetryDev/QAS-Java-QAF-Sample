@@ -1,6 +1,10 @@
+Feature: android
 
-SCENARIO: Android
-META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"rinkesh.jain"}
+@author:rinkesh.jain
+@description:A scenario to verify transacations
+@SMOKE
+
+Scenario: Android
 
     When wait until "email" to be enable
     And sendKeys "Bob" into "email"
@@ -26,5 +30,3 @@ META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"ri
     Then verify "enter.amount" text is "100"
     When wait until "fund.transfer" to be enable
     And click on "fund.transfer"
-
-END

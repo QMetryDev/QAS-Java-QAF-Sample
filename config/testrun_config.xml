@@ -24,7 +24,7 @@
 		<parameter name="env.resources" value="resources/testdata;resources/mobileweb"></parameter>
 		<parameter name="step.provider.pkg" value="steps;steps.mobileweb"></parameter>
 		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
 		</classes>
 	</test>
 	<test name="BDD Test for Web" enabled="true">
@@ -32,7 +32,7 @@
 		<parameter name="env.resources" value="resources/testdata;resources/web"></parameter>
 		<parameter name="step.provider.pkg" value="steps;steps.web"></parameter>
 		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
 		</classes>
 	</test>
 	<test name="BDD Test for Android" enabled="true">
@@ -40,7 +40,7 @@
 		<parameter name="env.resources" value="resources/testdata;resources/android"></parameter>
 		<parameter name="step.provider.pkg" value="steps;steps.android"></parameter>
 		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
 		</classes>
 	</test>
 	<test name="BDD Test for iOS" enabled="true">
@@ -48,7 +48,7 @@
 		<parameter name="env.resources" value="resources/testdata;resources/ios"></parameter>
 		<parameter name="step.provider.pkg" value="steps;steps.ios"></parameter>
 		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
 		</classes>
 	</test>
 	<test name="BDD Test for Windows" enabled="true">
@@ -56,7 +56,7 @@
 		<parameter name="env.resources" value="resources/testdata;resources/windows"></parameter>
 		<parameter name="step.provider.pkg" value="steps;steps.windows"></parameter>
 		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
 		</classes>
 	</test>
 	<test name="BDD Test for WebService" enabled="true">
@@ -64,7 +64,7 @@
 		<parameter name="env.resources" value="resources/testdata;resources/webservice"></parameter>
 		<parameter name="step.provider.pkg" value="steps;steps.webservice"></parameter>
 		<classes>
-			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
 		</classes>
 	</test>
 
