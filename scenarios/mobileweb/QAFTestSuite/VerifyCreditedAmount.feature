@@ -1,13 +1,15 @@
+Feature: mobileweb
 
-SCENARIO: VerifyCreditedAmount
-META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"nidhi.shah"}
+@author:nidhi.shah
+@description:A scenario to credit the amount and verify
+@SMOKE
+
+Scenario: VerifyCreditedAmount
 
     # Launch site
 	Given get "https://qas.qmetry.com/bank"
-
-	Then create random string
 	
-	# Maximize browser window. (Custom bdd step - Find the definition at steps.web)
+	# Maximize browser window. (Custom bdd step - Find the definition at steps.mobileweb)
 	Then maximize window
 	# Login
 	And wait until "text.txtusername" to be enable
@@ -24,7 +26,7 @@ META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"ni
 	# Store the current balance into variable
 	Then get text of "text.currentbalance"
 	And store into "currentBalance"
-	# Credit the amount (Amount to be credited is stored in resources/testdata/data.xml - Datadriven)
+	# Debit the amount (Amount to be debited is stored in resources/testdata/data.xml - Datadriven)
 	Then wait until "number.enteramountforcredit" to be enable
 	And clear "number.enteramountforcredit"
 	And sendKeys "1000" into "number.enteramountforcredit"
@@ -33,7 +35,7 @@ META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"ni
 	# Verify success message of credit operation
 	Then assert "operation.success.message" is present
 	
-	# Update the value of stored balance(line no 26)(Custom bdd step - Find the definition at steps.web)
+	# Update the value os stored balance(line no 24)(Custom bdd step - Find the definition at steps.mobileweb)
 	And "credit" the value of "currentBalance" with amount "1000"
 	
 	# Verify the updated stored balance value with the updated online balance
@@ -42,7 +44,5 @@ META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"ni
 	# Logout
 	And wait until "button.logout" to be enable
 	And click on "button.logout"
-	# Verify successful logout
+	# Verify success logout
 	And assert "button.btnlogin" is present
-
-END

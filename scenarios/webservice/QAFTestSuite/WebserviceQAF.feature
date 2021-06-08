@@ -1,6 +1,10 @@
+Feature: webservice
 
-SCENARIO: Webservice QAF
-META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"rinkesh.jain"}
+@author:nidhi.shah
+@description:Sample Test Scenario for Webservices
+@SMOKE
+
+Scenario: Webservice QAF
 
     When user requests "GET.struts2.rest.showcase.2.5.18.orders.json"
     And user requests "PUT.struts2.rest.showcase.2.5.18.orders.3.json"
@@ -8,4 +12,3 @@ META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"ri
     And response should have header "Content-Length" with value "4"
     When user requests "PUT.struts2.rest.showcase.2.5.18.orders.3.json_1"
 
-END
