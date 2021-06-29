@@ -264,7 +264,7 @@
         "mode": "play",
         "tcId": 1
     },
-    "testData": "resources/web/users.csv",
+    "testData": "resources/testdata/users.csv",
     "testDataExample": [],
     "isTCValid": true,
     "externalTestData": false,
