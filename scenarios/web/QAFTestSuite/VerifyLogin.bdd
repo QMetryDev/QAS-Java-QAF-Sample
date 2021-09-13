@@ -1,6 +1,6 @@
 
 SCENARIO : VerifyLogin
-META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"nidhi.shah","dataFile":"resources/testdata/users.csv"}
+META-DATA: {"description":"Sample Test Scenario","groups":["SMOKE"],"author":"nidhi.shah","dataFile":"resources/web/users.csv"}
 
    Given get "https://qas.qmetry.com/bank"
    When wait until "text.txtusername" to be enable
